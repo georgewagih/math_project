@@ -17,7 +17,7 @@ figure(1);
 plot(real(uc),imag(uc));
 axis equal;
 %generating the image of the unit circle and the line under the complex mapping 
-%?(?) = ?^2 +(1+?)??3.
+%f(z) = z^2 +(1+i)*z-3
 %---------------------------------------------------------------------------
 u1=uc;
 u1=u1.^2+u1.*(1+i)-3;
@@ -34,7 +34,7 @@ plot(real(l1),imag(l1));
 title('f(z) = z^2 +(1+i)*z-3');
 axis equal;
 %generating the image of the unit circle and the line under the complex mapping 
-%?(?) = ?*?^3+???.
+%f(z)=i*z^3+z-i
 %-----------------------------------------------------------------------------
 u2=uc;
 u2=(u2.^3).*i+u2-i;
@@ -51,7 +51,7 @@ plot(real(l2),imag(l2));
 title('f(z)=i*z^3+z-i');
 axis equal;
 %generating the image of the unit circle and the line under the complex mapping 
-%?(?)=?^4-z.
+%f(z)=z^4-z
 %------------------------------------------------------------------------------
 u3=uc;
 u3=u3.^4-u3;
@@ -68,7 +68,7 @@ plot(real(l3),imag(l3));
 title('f(z)=z^4-z');
 axis equal;
 %generating the image of the unit circle and the line under the complex mapping 
-%?(?)=?^3???.
+%f(z)=z^3-z'
 %----------------------------------------------------------------------------
 u4=uc;
 u4=u4.^3-conj(u4);
